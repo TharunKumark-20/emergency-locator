@@ -23,7 +23,7 @@ function MapView() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/api/incidents/")
+      .get("https://emergency-locator-1qbl.onrender.com/api/incidents/")
       .then((response) => {
         setIncidents(response.data);
       })

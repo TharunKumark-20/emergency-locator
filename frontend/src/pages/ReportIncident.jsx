@@ -26,7 +26,7 @@ function ReportIncident() {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/incidents/",
+        "https://emergency-locator-1qbl.onrender.com/api/incidents/",
         {
           emergency_type: emergencyType,
           description: description,
